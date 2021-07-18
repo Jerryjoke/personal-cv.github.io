@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Resume</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background: rgb(243,243,243);
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        p{
+            font-weight: 100;
+            color: rgb(109, 103, 103);
+        }
+        /*navbar start */
+        .container{
+			max-width: 1400px;
+			margin: auto;
+		}
+		.logo{
+			display: flex;
+		}
+		.circle{
+			height: 30px;
+			width: 2rem;
+			background-color: rgb(239,163,3);
+			border-radius: 50%;
+			display: inline-block;
+		}
+		.logo a{
+			color: #000;
+			font-size: 25px;
+			font-weight: bold;
+			margin-left: 20px;
+		}
+		.navbar{
+			display: flex;
+			text-decoration: center;
+			padding: 20px;
+		}
+		nav{
+			flex: 1;
+			text-align: right;
+		}
+		nav ul{
+			display: inline-block;
+			list-style-type: none;
+		}
+		nav ul li{
+			display: inline-block;
+		}
+		nav ul li:last-child a{
+			border: none;
+		}
+		nav ul li a{
+			color: rgb(109, 103, 103);
+			font-weight: 100;
+			padding: 4px 15px;
+			border-right: 1px solid rgb(109, 103, 103);
+		}
+		nav ul li a:hover{
+			color: rgb(231, 173, 97);
+		}
+		.menu-icon{
+			display: none;
+		}
+        /*navbar end */
+        
+        /*header start */
+        .head{
+            max-width: 1000px;
+            margin: auto;
+            margin-top: 100px;
+        }
+        .head h1{
+            margin-bottom: 80px;
+            font-size: 40px;
+            padding: 20px;
+        }
+        /*education start */
+        .header{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row{
+            flex: 30%;
+            padding: 20px;
+        }
+        .row h3{
+            font-size: 30px;
+        }
+        .row-item{
+            display: flex;
+            text-align: start;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            padding: 20px;
+        }
+        .row-item ul{
+            padding: 20px;
+        }
+        .row-item .year{
+            margin-right: 40px;
+        }
+        .row-item-1 h4{
+            font-size: 20px;
+        }
+        /*education end */
+
+        /*header end */
+        /* footer starting*/
+
+		.footer{
+			padding: 0 0 20px;
+            font-size: 14px;
+		}
+        .row1{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+			margin-top: 60px;
+            text-align: center;
+        }
+		.footer-col1, .footer-col2, .footer-col3, .footer-col4{
+            min-width: 250px;
+            margin-bottom: 55px;
+        }
+		.footer-col1 h3, .footer-col3 h3, .footer-col2 h3{
+			font-size: 30px;
+			margin-bottom: 10px;
+		} 
+		.footer-col1 p, .footer-col2 p , .footer-col3 p, .footer-col4 p{
+			font-weight: 100;
+			color: rgb(109, 103, 103);
+		}
+		.footer-col3 img{
+			margin: 0 10px;
+		}
+		/* footer end*/
+        @media only screen and (max-width: 790px){
+            nav ul{
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: white;
+                overflow: hidden;	
+            }
+            nav ul li{
+                display: block;
+				margin: 20px 0 20px 0;
+				text-align: center;
+            }
+			nav ul li a{
+				border: none;
+				text-align: center;
+			}
+            .menu-icon{
+                display: block;
+				cursor: pointer;
+            }
+            .row-item{
+                display: block;
+            }
+        }
+        @media only screen and (max-width: 620px){
+			.footer-col1, .footer-col2, .footer-col3, .footer-col4{
+				text-align: left;
+			}
+		}
+    </style>
+</head>
+<body>
+    <!--navbar start-->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <div class="circle"></div>
+                <a href="">Tamil Arasu</a>
+            </div>
+            <nav>
+                <ul id="mymenu">
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" width="25px" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!--navbar end-->
+    <!--header start-->
+    <!--education start-->
+    <div class="head">
+        <div class="header">
+                <div class="row">
+                    <h3>Education</h3>
+                </div>
+                <div class="side">
+                    <div class="row-item">
+                        <p class="year">2015 - 2016</p>
+                        <div class="row-item-1">
+                            <h4>Thirumurugan matric.hr.sec.school</h4>
+                            <p>Completed my 10th grade in this school. <br>
+                                My total grade in percentage 92.8%, <br>
+                                Under state board.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-item">
+                        <p class="year">2017 - 2018</p>
+                        <div class="row-item-1">
+                            <h4>Vikas Vidyalaya matric.hr.sec.school</h4>
+                            <p>Completed my 12th grade in this school. <br>
+                                My total grade in percentage 75.5%, <br>
+                                Under state board. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-item">
+                        <p class="year">2018 - 2022</p>
+                        <div class="row-item-1">
+                            <h4>Dr. N.G.P Institute of technology</h4>
+                            <p>I'm pursuving my college in this technology.<br>
+                                My total grade in percentage 92.8%. <br>
+                                Under Anna University.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <hr>
+    
+    <!--education end-->
+    <!--skillset start-->
+    <div class="head">
+        <div class="header">
+                <div class="row">
+                    <h3>Skill <br> & Expertise</h3>
+                </div>
+                <div class="side">
+                    <div class="row-item">
+                        <ul >
+                            <li> <p> Coding Skills</p> </li>
+                            <li> <p>Communication Skills</p> </li>
+                            <li> <p>Basic hardware and software Skills</p> </li>
+                            <li> <p>Team collaboration and project management</p> </li>
+                            <li> <p>Language : C, HTML, CSS, Basic JAVASCRIPT, JAVA</p> </li>
+                            <li> <p>Application : MS Office, MYSQL</p> </li>
+                            <li> <p> Operating System : Windows 10</p></li>
+                        </ul>
+                </div>
+        </div>
+        </div>
+        </div>
+        <hr>
+    <!--skillset end-->
+    
+    <!--header end-->
+    
+    <!--footer starting-->
+	<div class="footer">
+		<div class="container">
+			<div class="row1">
+				<div class="footer-col1">
+					<h3>Phone</h3>
+					<p>+91-9944326175</p>
+				</div>
+				<div class="footer-col2">
+					<h3>Email</h3>
+					<p>tamilsa93@gmail.com</p>
+				</div>
+				<div class="footer-col3">
+					<h3>Follow Me</h3>
+					<a href=""><img src="./linkedin.png" width="25px"></a>
+					<a href=""><img src="./github.jfif" width="25px"></a>
+				</div>
+				<div class="footer-col4">
+					<p>&#169; 2021 - Tamilarasu</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--footer end-->
+    <!--navbar script-->
+		<script>
+			var mymenu = document.getElementById("mymenu");
+			mymenu.style.maxHeight = "0px";
+			function menutoggle(){
+				if(mymenu.style.maxHeight == "0px"){
+					mymenu.style.maxHeight = "200px"
+				}
+				else{
+					mymenu.style.maxHeight = "0px"
+				}
+			}
+		</script>
+</body>
+</html>
